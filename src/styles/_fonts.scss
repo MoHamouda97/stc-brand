@@ -1,0 +1,47 @@
+$font-path: "assets/fonts/stc-forward" !default;
+
+$stc-forward-font-family-regular: "stc-forward-regular" !default;
+$stc-forward-font-family-bold: "stc-forward-bold";
+$stc-forward-font-family-light: "stc-forward-light";
+$stc-forward-font-family-medium: "stc-forward-medium";
+$stc-forward-font-family-thin: "stc-forward-thin";
+
+@font-face {
+  font-family: '#{$stc-forward-font-family-thin}';
+  src: url('#{$font-path}/#{$stc-forward-font-family-thin}.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: '#{$stc-forward-font-family-light}';
+  src: url('#{$font-path}/#{$stc-forward-font-family-light}.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: '#{$stc-forward-font-family-regular}';
+  src: url('#{$font-path}/#{$stc-forward-font-family-regular}.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: '#{$stc-forward-font-family-medium}';
+  src: url('#{$font-path}/#{$stc-forward-font-family-medium}.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: '#{$stc-forward-font-family-bold}';
+  src: url('#{$font-path}/#{$stc-forward-font-family-bold}.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}

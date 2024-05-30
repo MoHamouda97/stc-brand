@@ -1,0 +1,116 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px 8px 8px;
+  border: 1px solid $color-coral;
+  border-radius: 4px;
+  background-color: $color-coral;
+  color: $color-white;
+  //font-family: $stc-forward-font-family-regular;
+  font-size: $font-size-normal;
+  line-height: $line-height-normal;
+  gap: 10px;
+
+  &:hover,
+  &:active {
+    background-color: $color-coral-2;
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+
+  &--plain {
+    border: 1px solid $color-black;
+    background-color: $color-white;
+    color: $color-black;
+    
+    &:hover{
+      background-color: $color-coral-hover;
+    }
+  }
+
+  // primary
+  &--primary {
+    background-color: $color-coral;
+
+    &:hover,
+    &:active {
+      background-color: $color-coral-2;
+    }
+  }
+
+  // secondary
+  &--secondary {
+    border: 1px solid $color-coral;
+    background-color: $color-white;
+    color: $color-coral;
+
+    &:hover,
+    &:active {
+      background-color: $color-coral-hover;
+    }
+  }
+
+  //teritiary
+  &--teritiary {
+    border: 1px solid $color-silver;
+    background-color: $color-silver;
+    color: $color-white;
+
+    &:hover,
+    &:active {
+      background-color: $color-silver-2;
+    }
+  }
+
+  //teritiary regular
+  &--teritiary-regular {
+    border: 1px solid $color-onyx;
+    background-color: $color-white;
+    color: $color-onyx;
+
+    &:hover,
+    &:active {
+      border: 1px solid $color-air;
+      background-color: $color-air;
+    }
+  }
+
+  // Purple primary
+  &--purple-primary{
+    border: none;
+    background-color: $color-purple;
+    font-size: 11px;
+
+    &:hover,
+    &:active {
+      background-color: $color-coral-2;
+    }
+  }
+
+  // button air
+  &--air{
+    border: 1px solid $color-air;
+    background-color: $color-white;
+    color: $color-black;
+    
+    &:hover{
+      background-color: $color-purple-hover;
+    }
+  }
+
+  // BIG CTA
+  &--air2 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    border: 1px solid $color-air;
+    background-color: $color-air;
+    color: $color-black;
+    &:hover{
+      background-color: $color-air;
+    }
+  }
+}

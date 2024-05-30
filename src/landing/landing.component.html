@@ -1,0 +1,105 @@
+<div class="landing-comp">
+  <div class="landing-comp__header">
+    <div class="landing-comp__header--top">
+      <div class="landing-comp__header--logo">
+        <a><img [src]="logoImage" alt="image" /></a>
+      </div>
+      <div class="landing-comp__header--login">
+        <button class="cta cta--primary" (click)="loginPage()">
+          <span> {{btnLogin}} </span>
+        </button>
+      </div>
+    </div>
+    <div class="landing-comp__header--wrapper">
+      <div class="landing-comp__header--left">
+        <div class="content">
+          <div class="content__subTitle h3">{{ headerConfig.subtitle }}</div>
+          <div class="content__title h1">
+            {{ headerConfig.title }}
+          </div>
+          <div class="content__decs p-normal">
+            {{ headerConfig.decs }}
+          </div>
+          <div class="content__button" (click)="loginPage()">
+            <button class="cta cta--primary">
+              <span> {{ headerConfig.button }} </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="landing-comp__header--right">
+        <img [src]="headerImage" alt="image" />
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let item of bodyConfig">
+    <div [ngClass]="item.reverse === 'true' ? 'landing-comp__body reverse' : 'landing-comp__body'">
+      <div class="landing-comp__body--left">
+        <div class="content">
+          <div class="content__subTitle h3">{{item.subtitle}}</div>
+          <div class="content__title h1">
+            {{item.title}}
+          </div>
+          <div class="content__decs1 p-normal">
+            {{item.decs1}}
+          </div>
+          <div class="content__decs2 p-normal">
+            {{item.decs2}}
+          </div>
+          <div class="content__designation">
+            <div class="content__designation--lable p-medium">{{item.lable}} - </div>
+            <div class="content__designation--name p-normal">{{item.name}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="landing-comp__body--right">
+        <img [src]="item.image" alt="image" />
+      </div>
+    </div>
+  </div>
+  <div class="landing-comp__videoDemo">
+    <div class="landing-comp__videoDemo--title h1">{{videoDemoConfig.title}}</div>
+    <div class="landing-comp__videoDemo--decs p-normal">
+      {{videoDemoConfig.decs}}
+    </div>
+    <div class="landing-comp__videoDemo--video">
+      <video controls>
+        <source [src]="videoDemoConfig.path" />
+      </video>
+    </div>
+  </div>
+  <div class="landing-comp__aboutUs">
+    <div class="landing-comp__aboutUs--content">
+      <div class="landing-comp__aboutUs--link">
+        <div class="landing-comp__aboutUs--logo">
+          <img [src]="logoImage" alt="image" />
+        </div>
+        <div class="landing-comp__aboutUs--follow">{{aboutUs.follow}}</div>
+        <div class="landing-comp__aboutUs--icons">
+          <span class="icon icon-linkin"></span>
+          <span class="icon icon-instagram"></span>
+          <span class="icon icon-facebook"></span>
+          <span class="icon icon-twitter"></span>
+          <span class="icon icon-youtube"></span>
+        </div>
+      </div>
+      <div class="landing-comp__aboutUs--resources">
+        <div class="h2">{{aboutUs.resource}}</div>
+        <div class="p-normal" *ngFor="let item of resourceList">{{item.value}}</div>
+      </div>
+      <div class="landing-comp__aboutUs--learnmore">
+        <div class="h2">{{aboutUs.learnmore}}</div>
+        <div class="p-normal" *ngFor="let item of learnmoreList">{{item.value}}</div>
+      </div>
+      <div class="landing-comp__aboutUs--contacts">
+        <div class="h2">{{aboutUs.contact}}</div>
+        <div class="p-normal" *ngFor="let item of contactList">{{item.value}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="landing-comp__footer">
+    <div class="landing-comp__footer--content p-normal">
+      {{footerConfig}}
+    </div>
+  </div>
+</div>

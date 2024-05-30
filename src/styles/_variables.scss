@@ -1,0 +1,70 @@
+//_variables.scss
+
+//== Colors
+//
+//## Gray and brand colors for use across theme.
+$color-navy: #01FEFE;
+$color-coral: #FF375E;
+$color-coral-hover: #ff375f10;
+$color-coral-2: #D62E4F;
+$color-purple: #4F008C;
+$color-purple-hover: #9204ff1a;
+$color-onyx: #1D252D;
+$color-black: #000000;
+$color-silver: #8E9AA0;
+$color-silver-2: #646464;
+$color-air: #F3F3F1;
+$color-air2: #E7E8FC;
+$color-white: #FFFFFF;
+$color-sunlight: #FFDD40;
+$color-sunset: #FF6A39;
+$color-oasis-light: #00C48C;
+$color-sea-light: #1BCED8;
+$color-moon-light: #A54EE1;
+$color-platinum-gray: #797979;
+$color-thick-grey: #999999;
+$color-dark-grey: #B1ACAC;
+$color-bg-grey: #E1E1E1;
+$color-bg-grey2: #D9D9D9;
+$color-box-shadow: rgba(0, 0, 0, 0.25);
+$color-inner-border: #DDDDDD;
+$color-pipe-air: #E3E3E3;
+$color-danger: #FF375E;
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-size-base: 14px;
+$font-size-h1: 32px;
+$font-size-h2: 22px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-h3: 16px;
+$font-size-normal: $font-size-base;
+
+$line-height-h1: 48px;
+$line-height-h2: 36px;
+$line-height-h3: 32px;
+$line-height-base: 24px;
+$line-height-small: 16px;
+$line-height-medium: 20px;
+$line-height-normal: $line-height-base;
+
+// Functional Colors
+
+
+//Layout
+$max-width: 1024px;
+$header-height: 75px;
+
+// Spacing
+$gutter-padding: 12px;
+
+
+// Breakpoint
+$BREAKPOINT-XS: 0;
+$BREAKPOINT-SM: 576;
+$BREAKPOINT-MD: 768;
+$BREAKPOINT-LG: 992;
+$BREAKPOINT-XL: 1200;
+$BREAKPOINT-XXL: 1900;

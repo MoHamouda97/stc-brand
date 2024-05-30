@@ -1,0 +1,169 @@
+//@import "../../../styles/variables";
+@import "./../variables";
+
+.landing-comp {
+  &__header {
+    background: $color-purple;
+    color: $color-white;
+
+    &--top {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+    }
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15em;
+      border-top: 1px solid $color-silver;
+    }
+
+    &--left {
+      max-width: 500px;
+      margin-right: 100px;
+      
+      .content {
+        margin-right: 35px;
+        &__subtitle {
+        }
+
+        &__title {
+          margin-top: 16px;
+        }
+
+        &__decs {
+          margin-top: 16px;
+        }
+
+        &__button {
+          margin-top: 32px;
+        }
+      }
+    }
+
+    &--right {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20em;
+    padding: 100px;
+    margin: 0px auto;
+    background: $color-white;
+    color: $color-black;
+    max-width: 100%;
+
+    &.reverse {
+      flex-direction: row-reverse;
+      background: $color-air;
+    }
+
+    &--left {
+      max-width: 500px;
+
+      .content {
+        max-width: 452px;
+
+        &__subTitle {
+        }
+
+        &__title {
+          margin-top: 16px;
+        }
+
+        &__decs1 {
+          margin-top: 24px;
+          margin-bottom: 36px;
+        }
+
+        &__decs2 {
+          padding-top: 10px;
+          border-top: 1px solid $color-silver;
+        }
+
+        &__designation {
+          display: flex;
+        }
+      }
+    }
+
+    &--right {
+      box-shadow: $color-box-shadow;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__videoDemo {
+
+    max-width: 941px;
+    margin: 80px auto;
+
+    &--decs {
+      margin-top: 5px;
+      max-width: 727px;
+    }
+
+    &--video {
+      margin-top: 32px;
+      width: 100%;
+
+      video {
+        width: 100%;
+      }
+    }
+  }
+
+  &__aboutUs {
+    background-color: $color-purple;
+    color: $color-white;
+
+    &--content {
+      max-width: 80%;
+      margin: 0 auto;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--follow {
+      margin-top: 27px;
+    }
+
+    &--icons {
+      display: flex;
+      margin-top: 27px;
+
+      .icon {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__footer {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    background-color: $color-coral;
+    color: $color-white;
+
+    &--content {
+      max-width: 80%;
+      margin: 0 auto;
+
+    }
+  }
+}
